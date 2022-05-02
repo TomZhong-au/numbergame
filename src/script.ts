@@ -1,22 +1,22 @@
 const container = document.querySelector(".container")
 const numberArray = []
 const numberRange = 30
-const answer = document.querySelector(".answer")
+const answer = document.querySelector(".answer") as HTMLElement
 const answerArray = []
-const result = document.querySelector(".result")
+const result = document.querySelector(".result") as HTMLElement
 const startTime = new Date()
 let stopTime = startTime
 let usedTime
 const submitButton = document.querySelector("#button")
 
-const formResult = document.querySelector("#formResult")
-const formTime = document.querySelector("#formTime")
+const formResult = document.querySelector("#formResult") as HTMLInputElement
+const formTime = document.querySelector("#formTime") as HTMLFormElement
 
 for (let i = 0; i < numberRange; i++) {
   const number = generateUniqueNumber(numberArray, numberRange)
   numberArray.push(number)
   const newNumberElement = document.createElement("button")
-  newNumberElement.classList = "number-buttons"
+  newNumberElement.classList.add( "number-buttons")
   newNumberElement.innerText = number
   container.appendChild(newNumberElement)
 }
@@ -30,7 +30,7 @@ function generateUniqueNumber(array, range) {
 }
 
 container.addEventListener("click", e => {
-  if (e.target.nodeName == "BUTTON") {
+  if (e.target instanceof HTMLButtonElement) {
     if (e.target.matches(".selected")) {
       if (e.target.innerText === answerArray[answerArray.length - 1]) {
         e.target.classList.remove("selected")
@@ -47,7 +47,7 @@ container.addEventListener("click", e => {
   if (allButtonSelected()) {
     result.innerText = checkAnswer()
     stopTime = new Date()
-    usedTime = ((stopTime - startTime) / 1000).toString()
+    usedTime = ((stopTime.valueOf() - startTime.valueOf()) / 1000).toString()
     result.innerText += "You used " + usedTime + " seconds"
   }
 })
@@ -85,3 +85,4 @@ formElement.addEventListener("botpoison-challenge-success", function () {
 formElement.addEventListener("botpoison-challenge-error", function () {
   buttonElement.removeAttribute("disabled")
 })
+

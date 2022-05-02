@@ -8,6 +8,8 @@ const startTime = new Date();
 let stopTime = startTime;
 let usedTime;
 const submitButton = document.querySelector("#button");
+const minute = document.querySelector(".minute");
+const second = document.querySelector(".second");
 const formResult = document.querySelector("#formResult");
 const formTime = document.querySelector("#formTime");
 for (let i = 0; i < numberRange; i++) {
@@ -79,3 +81,14 @@ formElement.addEventListener("botpoison-challenge-success", function () {
 formElement.addEventListener("botpoison-challenge-error", function () {
     buttonElement.removeAttribute("disabled");
 });
+// stopwatch
+setInterval(updatetime, 1000);
+function updatetime() {
+    const currentTime = new Date();
+    let secondString = Math.floor(((currentTime.valueOf() - startTime.valueOf()) / 1000) % 60).toString();
+    secondString = ("0" + secondString).slice(-2);
+    second.innerText = secondString;
+    let minuteString = Math.floor(((currentTime.valueOf() - startTime.valueOf()) / 1000) / 60).toString();
+    minuteString = ("0" + minuteString).slice(-2);
+    minute.innerText = minuteString;
+}

@@ -1,3 +1,10 @@
+.stopwatch{
+    position: absolute;
+    right:10rem;
+    top:2rem;
+    font-size: 2rem;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(5, auto);

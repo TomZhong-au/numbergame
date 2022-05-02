@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- 1. Import the @botpoison/browser script -->
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
+    <script src="numbergame.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Find all the numbers in order</h1>
+    <div class="container"></div>
+    <div class="answer-container">
+      <span class="answer"></span>
+      <br />
+      <span class="result"></span>
+    </div>
+
+    <form
+      id="form"
+      action="https://submit-form.com/PnkIoTiN"
+      data-botpoison-public-key="pk_f195e045-32c1-45df-8cf2-ca37bc5110c8"
+    >
+      <input
+        type="text"
+        name="result"
+        id="formResult"
+        placeholder="leave this empty"
+      />
+      <input
+        type="text"
+        name="time"
+        id="formTime"
+        placeholder="leave this empty"
+      />
+      <br />
+      <label for="name">Name</label>
+      <br />
+      <input
+        type="text"
+        name="Name"
+        id="name"
+        placeholder="type in your name"
+      />
+      <button type="submit" id="button">Send</button>
+    </form>
+  </body>
+</html>

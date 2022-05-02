@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    place-items: center;
+    gap:.5rem;
+    background-color: white;
+    width: 30rem;
+    margin:auto;
+
+    
+}
+
+.container button{
+    background-color: rgb(38, 168, 5);
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.answer-container{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+button.selected{
+    background-color: chocolate;
+}
+
+form{
+    width:30rem;
+    margin:auto;
+}

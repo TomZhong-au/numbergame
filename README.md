@@ -1,5 +1,5 @@
 # This is for us to practise gitHub and/or practise skills
-
+Wendy
 # about this game
 
 It will generate 30 numbers in random positions, player need to click the buttoms from 1 - 30 to complete the game.

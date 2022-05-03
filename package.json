@@ -1,0 +1,23 @@
+{
+  "name": "git-practise",
+  "version": "1.0.0",
+  "description": "It will generate 30 numbers in random positions, player need to click the buttoms from 1 - 30 to complete the game.\r Try to complete the game as fast as possible.",
+  "main": "numbergame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomZhong-au/numbergame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomZhong-au/numbergame/issues"
+  },
+  "homepage": "https://github.com/TomZhong-au/numbergame#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}

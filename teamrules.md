@@ -3,8 +3,8 @@
 1. contribute at least 20 hours to the project every week;
 2. lodge at least one pull request every two weeks;
 3. attend the daily stand up meeting;
-4. attend weely progress meeting;
-5. daily git pull practise.
+4. attend weekly progress meeting;
+5. daily git pull practice.
 
 # Exit RULES !IMPORTANT
 

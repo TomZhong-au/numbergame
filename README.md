@@ -36,4 +36,3 @@ but there are a few features I could think of
 6. user create their own profile and upload profile avatar
 7. user's 10 best records;
    ...
-# Hendrix read and agree with all these rules

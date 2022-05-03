@@ -14,3 +14,5 @@
 # Procedure to remove
 
 1. A vote will be casted before removing any member (the member itself does not vote), if even, team captain could have an extra vote;
+
+# Hendrix read and agree with all these rules.
